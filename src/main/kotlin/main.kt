@@ -1,10 +1,11 @@
 package ru.netology
 
 fun main() {
-    val likes = 21       // кол-во лайков
+    val likes = 211       // кол-во лайков
 
-    val endOfNumber = likes % 10
-    val people = if (endOfNumber == 1 && likes != 11) " человеку" else " людям"
+    val endOfNumber1 = likes % 10
+    val endOfNumber11 = likes % 100
+    val people = if (endOfNumber1 == 1 && endOfNumber11 != 11) " человеку" else " людям"
 
     println("Понравилось $likes$people")
 }
